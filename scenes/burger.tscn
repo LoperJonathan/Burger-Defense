@@ -1,0 +1,72 @@
+[gd_scene load_steps=10 format=3 uid="uid://jwma3ec368s6"]
+
+[ext_resource type="PackedScene" uid="uid://ye63ievpuib1" path="res://assets/Burger/Burger.fbx" id="1_jvufg"]
+[ext_resource type="Texture2D" uid="uid://cpcf0eyddsgp" path="res://assets/Burger/Unreal Textures/burger_low_Material.001_BaseColor.png" id="2_xinqu"]
+[ext_resource type="Texture2D" uid="uid://bi538ya3f20mt" path="res://assets/Burger/Unreal Textures/burger_low_Material.001_Normal.png" id="3_1l10p"]
+[ext_resource type="Texture2D" uid="uid://da7bar7cvxnla" path="res://assets/Burger/Unreal Textures/burger_low_Material.001_OcclusionRoughnessMetallic.png" id="4_ldck8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kj4pt"]
+albedo_texture = ExtResource("2_xinqu")
+metallic = 1.0
+metallic_texture = ExtResource("3_1l10p")
+roughness_texture = ExtResource("4_ldck8")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i8ixk"]
+albedo_texture = ExtResource("2_xinqu")
+metallic = 1.0
+metallic_texture = ExtResource("3_1l10p")
+roughness_texture = ExtResource("4_ldck8")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hwyyd"]
+albedo_texture = ExtResource("2_xinqu")
+metallic = 1.0
+metallic_texture = ExtResource("3_1l10p")
+roughness_texture = ExtResource("4_ldck8")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wi1yl"]
+albedo_texture = ExtResource("2_xinqu")
+metallic = 1.0
+metallic_texture = ExtResource("3_1l10p")
+roughness_texture = ExtResource("4_ldck8")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fco8w"]
+albedo_texture = ExtResource("2_xinqu")
+metallic = 1.0
+metallic_texture = ExtResource("3_1l10p")
+roughness_texture = ExtResource("4_ldck8")
+
+[node name="Burger" instance=ExtResource("1_jvufg")]
+
+[node name="Bottombun_low_001" parent="." index="0"]
+material_override = SubResource("StandardMaterial3D_kj4pt")
+
+[node name="Tomato_low" parent="Bottombun_low_001" index="0"]
+material_override = SubResource("StandardMaterial3D_i8ixk")
+
+[node name="Cheese_low" parent="Bottombun_low_001" index="1"]
+material_override = SubResource("StandardMaterial3D_hwyyd")
+
+[node name="Lettuce_low_001" parent="Bottombun_low_001" index="2"]
+material_override = SubResource("StandardMaterial3D_wi1yl")
+
+[node name="topbun_low" parent="Bottombun_low_001" index="3"]
+material_override = SubResource("StandardMaterial3D_i8ixk")
+
+[node name="Patty_low_001" parent="Bottombun_low_001" index="4"]
+material_override = SubResource("StandardMaterial3D_i8ixk")
+
+[node name="Cheese_low_001" parent="Bottombun_low_001" index="5"]
+material_override = SubResource("StandardMaterial3D_i8ixk")
+
+[node name="Tomato_low_001" parent="Bottombun_low_001" index="6"]
+material_override = SubResource("StandardMaterial3D_i8ixk")
+
+[node name="Lettuce_low_002" parent="Bottombun_low_001" index="7"]
+material_override = SubResource("StandardMaterial3D_i8ixk")
+
+[node name="Patty_low_002" parent="Bottombun_low_001" index="8"]
+material_override = SubResource("StandardMaterial3D_fco8w")
+
+[node name="Tomato_low_002" parent="Bottombun_low_001" index="9"]
+transform = Transform3D(0.48683974, 0, 0, 0, 0.6429793, 0, 0, 0, 0.48683974, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_i8ixk")
