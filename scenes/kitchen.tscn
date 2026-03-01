@@ -37,11 +37,12 @@
 [ext_resource type="PackedScene" uid="uid://brwe257nnffsv" path="res://scenes/bottom_bum.tscn" id="35_tpccs"]
 
 [sub_resource type="Curve3D" id="Curve3D_87bic"]
+bake_interval = 5.37
 _data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0, 0, 1.5, 0, 0, 0, 0, 0, 0, 17, 0, 1.5, 0, 0, 0, 0, 0, 0, 17, 0, 5.5, 0, 0, 0, 0, 0, 0, 15, 0, 5.5, 0, 0, 0, 0, 0, 0, 15, 0, 6.5, 0, 0, 0, 0, 0, 0, 3, 0, 6.5, 0, 0, 0, 0, 0, 0, 3, 0, 10.5, 0, 0, 0, 0, 0, 0, 7, 0, 10.5, 0, 0, 0, 0, 0, 0, 7, 0, 9.5, 0, 0, 0, 0, 0, 0, 15, 0, 9.5, 0, 0, 0, 0, 0, 0, 15, 0, 11.5, 0, 0, 0, 0, 0, 0, 17, 0, 11.5, 0, 0, 0, 0, 0, 0, 17, 0, 15.5, 0, 0, 0, 0, 0, 0, 9, 0, 15.5, 0, 0, 0, 0, 0, 0, 9, 0, 19.5, 0, 0, 0, 0, 0, 0, 5, 0, 19.5, 0, 0, 0, 0, 0, 0, 5, 0, 23.5, 0, 0, 0, 0, 0, 0, 0, 0, 23.5),
-"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0, 0.20000005, -1.5, 0, 0, 0, 0, 0, 0, 0, 0.1, 1.5, 0, 0, 0, 0, 0, 0, 16.5, 0, 2, 0, 0, 0, 0, 0, 0, 17, 0, 4.5, 0, 0, 0, 0, 0, 0, 15.5, 0, 5.5, 0, 0, 0, 0, 0, 0, 13.5, 0, 6.5, 0, 0, 0, 0, 0, 0, 3.5, 0, 7, 0, 0, 0, 0, 0, 0, 3, 0, 10, 0, 0, 0, 0, 0, 0, 6.5, 0, 10.5, 0, 0, 0, 0, 0, 0, 8, 0, 9.5, 0, 0, 0, 0, 0, 0, 14, 0, 9.5, 0, 0, 0, 0, 0, 0, 15.5, 0, 11.5, 0, 0, 0, 0, 0, 0, 17, 0, 13, 0, 0, 0, 0, 0, 0, 16.5, 0, 15, 0, 0, 0, 0, 0, 0, 9, 0, 15.5, 0, 0, 0, 0, 0, 0, 9, 0, 19.5, 0, 0, 0, 0, 0, 0, 5, 0, 19.5, 0, 0, 0, 0, 0, 0, 5, 0, 23.5, 0, 0, 0, 0, 0, 0, 0.5, 0.20000005, 23.5, 0, 0, 0, 0, 0, 0, 0, 0, 27),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 }
-point_count = 18
+point_count = 20
 
 [node name="KitchenRoot" type="Node3D"]
 
@@ -723,37 +724,37 @@ transform = Transform3D(-2.1855699e-07, 0, 5, 0, 5, 0, -5, 0, -2.1855699e-07, 14
 transform = Transform3D(-2.1855699e-07, 0, 5, 0, 5, 0, -5, 0, -2.1855699e-07, 4, 0, 30.25)
 
 [node name="Path3D" type="Path3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1.5, -0.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1.6, -0.5)
 curve = SubResource("Curve3D_87bic")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Path3D"]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0, 1.5)
+transform = Transform3D(-1, 2.9124672e-09, -8.7373984e-08, 0, 0.99944186, 0.033314742, 8.742278e-08, 0.033314742, -0.99944186, 0, 0.20000005, -1.5)
 script = ExtResource("17_87bic")
 
 [node name="Lettuce" parent="Path3D/PathFollow3D" instance=ExtResource("30_psp1i")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, 0)
 
 [node name="PathFollow3D7" type="PathFollow3D" parent="Path3D"]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 6.8799424, 0, 1.5)
+transform = Transform3D(-0.030498086, 0.0048937285, -0.9994989, -0.03818991, 0.99924654, 0.006057565, 0.9988032, 0.038356286, -0.030287713, 3.848642, 0.07667489, 1.6166255)
 progress = 6.8799996
 script = ExtResource("17_87bic")
 
 [node name="PathFollow3D2" type="PathFollow3D" parent="Path3D"]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 13.760247, 0, 1.5)
+transform = Transform3D(-0.030497966, 0.0048937304, -0.9994989, -0.038189914, 0.99924654, 0.006057563, 0.9988032, 0.03835629, -0.030287594, 10.776129, 0.034690127, 1.8265494)
 progress = 13.759999
 script = ExtResource("17_87bic")
 
 [node name="Cheese" parent="Path3D/PathFollow3D2" instance=ExtResource("31_q21mm")]
 
 [node name="PathFollow3D3" type="PathFollow3D" parent="Path3D"]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 11.480068, 0, 6.5)
+transform = Transform3D(-0.33907178, -0.011324292, 0.9406883, -0.033379003, 0.99944234, 4.7190123e-09, -0.9401633, -0.03139948, -0.33926114, 12.298074, 0, 6.625617)
 progress = 27.519999
 script = ExtResource("17_87bic")
 
 [node name="TopBun" parent="Path3D/PathFollow3D3" instance=ExtResource("32_mnhhk")]
 
 [node name="PathFollow3D4" type="PathFollow3D" parent="Path3D"]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 4.279786, 0, 10.5)
+transform = Transform3D(-0.70032084, -0.023388982, -0.71343356, -0.033378873, 0.99942744, -8.03371e-10, 0.7130358, 0.02381363, -0.70071155, 5.0603204, 0, 10.528368)
 progress = 41.28
 script = ExtResource("17_87bic")
 
@@ -761,14 +762,14 @@ script = ExtResource("17_87bic")
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, 0)
 
 [node name="PathFollow3D5" type="PathFollow3D" parent="Path3D"]
-transform = Transform3D(-0.74445283, 0, -0.6676751, 0, 1, 0, 0.6676751, 0, -0.74445283, 15.033547, 0, 11.505714)
+transform = Transform3D(-0.7100739, -0.023715084, -0.70371526, -0.033378858, 0.99944264, 6.449107e-11, 0.70332307, 0.02348962, -0.71046984, 16.980942, 0, 12.941927)
 progress = 55.039997
 script = ExtResource("17_87bic")
 
 [node name="Patty" parent="Path3D/PathFollow3D5" instance=ExtResource("34_j5uij")]
 
 [node name="PathFollow3D6" type="PathFollow3D" parent="Path3D"]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.199709, 0, 15.5)
+transform = Transform3D(-0.9985006, -0.03334777, 0.043339275, -0.033379044, 0.99944234, 4.1525425e-10, -0.043315127, -0.0014466316, -0.9990572, 8.940315, 0, 19.550713)
 progress = 68.8
 script = ExtResource("17_87bic")
 
@@ -778,9 +779,7 @@ script = ExtResource("17_87bic")
 transform = Transform3D(-2.1855689e-08, 0.86602545, -0.49999994, 3.785517e-08, 0.49999994, 0.86602545, 1, 0, -4.371138e-08, 1.5, 14, 12)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 48, 11)
-light_angular_distance = 12.99
-shadow_enabled = true
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -12, 48, 9.5)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 9, 12)
